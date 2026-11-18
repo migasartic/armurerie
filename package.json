@@ -1,0 +1,13 @@
+{
+  "name": "armurerie",
+  "version": "1.0.0",
+  "description": "Gestion du rechargement, du stock de munitions, des armes et des dépenses — hors-ligne d'abord",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

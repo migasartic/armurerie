@@ -1,0 +1,15 @@
+services:
+  armurerie:
+    build: .
+    restart: unless-stopped
+    environment:
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - APP_SECRET=${APP_SECRET}
+    volumes:
+      - armurerie-data:/data
+    ports:
+      - "3100:3000"
+
+volumes:
+  armurerie-data:
